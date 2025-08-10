@@ -1,5 +1,5 @@
 # Sofia Finance 💵🍃
-> This is an app that helps you plan annual budgets in advance.
+> This is an app that helps you plan annual budgets in advance deployed [here](https://kesler20.github.io/sofia_finance/)
 
 ![Application UI](docs/App%20UI.png)
 
