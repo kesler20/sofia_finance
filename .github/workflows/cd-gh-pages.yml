@@ -47,3 +47,6 @@ jobs:
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./dist
+      
+      - name: Add Deployment Link to UI
+        run: echo "🔗 [View your deployment here](https://kesler20.github.io/sofia_finance/)" >> $GITHUB_STEP_SUMMARY
