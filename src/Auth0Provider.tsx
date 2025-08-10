@@ -18,6 +18,9 @@ export default function Auth0ProviderWithHistory({
     navigate(appState?.returnTo || location.pathname);
   };
 
+  const basePath = new URL(document.baseURI).pathname;
+  const redirectUri = `${window.location.origin}${basePath}`;
+
   return (
     <Auth0Provider
       domain={authConfig.domain}
@@ -26,7 +29,7 @@ export default function Auth0ProviderWithHistory({
       useRefreshTokens={true}
       cacheLocation="localstorage"
       authorizationParams={{
-        redirect_uri: window.location.origin,
+        redirect_uri: redirectUri,
       }}
     >
       {children}
