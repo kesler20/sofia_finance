@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-  build:
+  test:
     needs: install
     runs-on: ubuntu-latest
     if: success()
@@ -34,11 +34,8 @@ jobs:
       - name: Run Type Checking
         run: pnpm run type-check
 
-      - name: Run Build
-        run: pnpm run build
-
   deploy:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
     if: success()
     steps:
