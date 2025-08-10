@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 235, 1) 0%,
+    rgba(0, 192, 255, 1) 0%,
+    rgba(7, 58, 187, 1) 100%
+  );
+  border: none;
+  color: white;
+}
+
+.modal__card__btn--create {
+  border-radius: 20px;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(76, 175, 80, 1) 0%,
+    rgba(49, 220, 255, 1) 100%
+  );
+}
+
+.modal__card__btn--create:hover {
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgb(151, 235, 154) 0%,
+    rgba(49, 220, 255, 1) 100%
+  );
+}
+
+.site-title {
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 235, 1) 0%,
+    rgba(7, 58, 187, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, rgb(155, 209, 157) 0%, rgb(142, 226, 243) 100%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

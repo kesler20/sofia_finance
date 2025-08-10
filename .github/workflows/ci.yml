@@ -1,0 +1,29 @@
+name: Continuous Integration Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install PNPM
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run Type Checking
+        run: pnpm run type-check
+
+      - name: Run Build
+        run: pnpm run build
+  
+
