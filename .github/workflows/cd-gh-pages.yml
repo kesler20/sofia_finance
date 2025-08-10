@@ -2,8 +2,8 @@ name: Continuous Integration, Continuous Delivery Pipeline (GitHub Pages)
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - master
 
 jobs:
   install:
