@@ -7,7 +7,6 @@
 
 | Badge                                                                                              | Description                                     |
 | -------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| ![Release](https://img.shields.io/github/v/release/kesler20/sofia_finance?include_prereleases)     | Latest release version, including pre-releases. |
 | ![GitHub Issues](https://img.shields.io/github/issues/kesler20/sofia_finance)                      | Open GitHub issues.                             |
 | ![CI Pipeline](https://github.com/kesler20/sofia_finance/actions/workflows/ci.yml/badge.svg)       | CI Pipeline                                     |
 | pnpm                                                                                               | Package manager                                 |
