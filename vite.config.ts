@@ -7,4 +7,5 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true, // this ensure the outDir is cleared before building
   },
+  base: "/sofia_finance/",
 });
