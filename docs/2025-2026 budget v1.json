@@ -1,0 +1,1424 @@
+{
+  "January": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "One off payments",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Medium",
+            "value": 40.36
+          },
+          {
+            "name": "TickTick",
+            "value": 30.4
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "name": "Credit",
+        "type": "income",
+        "sections": [
+          {
+            "name": "Money Lent",
+            "value": 2662.15
+          }
+        ]
+      }
+    ]
+  },
+  "February": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "One off payments",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Myfitnesspal",
+            "value": 64.99
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "March": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "April": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "May": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "One off payments",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Readwise",
+            "value": 86.79
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "June": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "July": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "One off payments",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Mathpix",
+            "value": 38.8
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "August": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "One off payments",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Obsidian",
+            "value": 75.66
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "September": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "October": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "November": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "One off payments",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Strong",
+            "value": 27.49
+          },
+          {
+            "name": "Onedrive",
+            "value": 79.99
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  },
+  "December": {
+    "categories": [
+      {
+        "name": "fixed income",
+        "type": "income",
+        "sections": [
+          {
+            "name": "PhD Stipend",
+            "value": 1769.75
+          }
+        ]
+      },
+      {
+        "name": "Bills",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Rent",
+            "value": 500
+          },
+          {
+            "name": "Gas & Electric",
+            "value": 22
+          },
+          {
+            "name": "Wifi",
+            "value": 15
+          },
+          {
+            "name": "Council Tax",
+            "value": 105
+          },
+          {
+            "name": "Water",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "Subscriptions",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Personal Trainer",
+            "value": 140
+          },
+          {
+            "name": "YouTube",
+            "value": 12
+          },
+          {
+            "name": "Monzo",
+            "value": 5
+          },
+          {
+            "name": "Github Copilot",
+            "value": 7.86
+          },
+          {
+            "name": "Chatgpt",
+            "value": 18.82
+          },
+          {
+            "name": "Peanut Powder",
+            "value": 10.8
+          },
+          {
+            "name": "Protein Powder",
+            "value": 25.17
+          }
+        ]
+      },
+      {
+        "name": "Variable Costs",
+        "type": "expense",
+        "sections": [
+          {
+            "name": "Entertainment",
+            "value": 50
+          },
+          {
+            "name": "Hair",
+            "value": 55
+          },
+          {
+            "name": "Football",
+            "value": 35
+          },
+          {
+            "name": "Eating Out",
+            "value": 150
+          },
+          {
+            "name": "Transport",
+            "value": 150
+          },
+          {
+            "name": "Gifts",
+            "value": 20
+          },
+          {
+            "name": "Online Shopping",
+            "value": 50
+          },
+          {
+            "name": "Groceries",
+            "value": 300
+          }
+        ]
+      }
+    ]
+  }
+}
