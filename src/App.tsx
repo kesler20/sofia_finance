@@ -34,7 +34,6 @@ export type Months =
   | "October"
   | "November"
   | "December";
-type MonthlyTotal = Record<Months, { totalIn: number; totalOut: number }>;
 export type Finances = Record<
   Months,
   {
@@ -117,13 +116,15 @@ function Card(props: {
   );
 }
 
-function CategoryItem(props: {
+type CategoryItemProps = {
   name: string;
   value: number;
   onDeleteCategoryItem: () => void;
   onChangeCategoryItemName: (newItemName: string) => void;
   onChangeCategoryItemValue: (newItemValue: number) => void;
-}) {
+};
+
+const CategoryItem = React.memo(function CategoryItem(props: CategoryItemProps) {
   const [nameDisplayMode, setNameDisplayMode] = React.useState<"edit" | "view">(
     "view"
   );
@@ -132,6 +133,10 @@ function CategoryItem(props: {
   );
   const [itemName, setItemName] = React.useState<string>(props.name);
   const [itemValue, setItemValue] = React.useState<number>(props.value);
+
+  // keep local state in sync with parent updates
+  React.useEffect(() => setItemName(props.name), [props.name]);
+  React.useEffect(() => setItemValue(props.value), [props.value]);
 
   return (
     <div className="flex h-[60px] w-full items-center justify-evenly">
@@ -205,10 +210,11 @@ function CategoryItem(props: {
       )}
     </div>
   );
-}
+});
 
 // TODO: the className, style and onClick property could be replaced using a higher order component
-function Category(props: {
+
+type CategoryProps = {
   name: string;
   sections: { name: string; value: number }[];
   onChangeCategoryName: (newCategoryName: string) => void;
@@ -224,12 +230,19 @@ function Category(props: {
   style?: React.CSSProperties;
   onClick?: () => void;
   onDoubleClick?: () => void;
-}) {
+};
+
+const Category = React.memo(function Category(props: CategoryProps) {
   const [viewMode, setViewMode] = React.useState<"edit" | "view">("view");
   const [categoryName, setCategoryName] = React.useState<string>(props.name);
 
+  React.useEffect(() => setCategoryName(props.name), [props.name]);
+
   // Calculate total value for this category
-  const totalValue = props.sections.reduce((sum, section) => sum + section.value, 0);
+  const totalValue = React.useMemo(
+    () => props.sections.reduce((sum, section) => sum + section.value, 0),
+    [props.sections]
+  );
 
   return (
     <div onDoubleClick={props.onDoubleClick}>
@@ -302,7 +315,7 @@ function Category(props: {
       </Card>
     </div>
   );
-}
+});
 
 function CategoryContainer(props: {
   children?: React.ReactNode;
@@ -794,11 +807,6 @@ const defaultMonthlyBalance: Finances = {
   December: { categories: [] },
 };
 
-let defaultMonthlyTotal = {} as MonthlyTotal;
-Object.keys(defaultMonthlyBalance).forEach((month) => {
-  defaultMonthlyTotal[month as Months] = { totalIn: 0, totalOut: 0 };
-});
-
 export default function App() {
   // =======================//
   //                        //
@@ -819,19 +827,40 @@ export default function App() {
     cachedMonthlyBalance,
     (initial) => initial
   );
-  const [totalAnnualValue, setTotalAnnualValue] = useStoredValue<number>(
-    0,
-    "totalAnnualValue"
-  );
-  const [currentMonthlyTotal, setCurrentMonthlyTotal] = useStoredValue<MonthlyTotal>(
-    defaultMonthlyTotal,
-    "currentMonthlyTotal"
-  );
   const [selectedCategories, setSelectedCategories] = useStoredValue<Category[]>(
     [],
     "selectedCategories"
   );
   const { logout, user, isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
+
+  // Derived totals for instant UI updates
+  const currentMonthTotals = React.useMemo(() => {
+    let totalIn = 0;
+    let totalOut = 0;
+    monthlyBalance[currentMonth].categories.forEach((category) => {
+      category.sections.forEach((section) => {
+        if (category.type === "income") totalIn += section.value;
+        else totalOut += section.value;
+      });
+    });
+    return { totalIn, totalOut };
+  }, [monthlyBalance, currentMonth]);
+
+  const annualNet = React.useMemo(() => {
+    let net = 0;
+    (Object.keys(monthlyBalance) as Months[]).forEach((month) => {
+      let tin = 0;
+      let tout = 0;
+      monthlyBalance[month].categories.forEach((category) => {
+        category.sections.forEach((section) => {
+          if (category.type === "income") tin += section.value;
+          else tout += section.value;
+        });
+      });
+      net += tin - tout;
+    });
+    return net;
+  }, [monthlyBalance]);
 
   console.log("selectedCategories", selectedCategories);
   console.log("cachedMonthlyBalance", monthlyBalance[currentMonth]);
@@ -851,16 +880,8 @@ export default function App() {
 
   // Update cachedMonthlyBalance when monthlyBalance changes
   React.useEffect(() => {
-    if (monthlyBalance !== defaultMonthlyBalance) {
-      setCachedMonthlyBalance(monthlyBalance);
-      calculateAnnualTotal();
-    }
-  }, [monthlyBalance]);
-
-  // Calculate totalIn and totalOut for each month
-  React.useEffect(() => {
-    calculateMonthlyTotal();
-  }, [monthlyBalance, monthlyBalance[currentMonth], currentMonth]);
+    setCachedMonthlyBalance(monthlyBalance);
+  }, [monthlyBalance, setCachedMonthlyBalance]);
 
   // ======================//
   //                       //
@@ -906,40 +927,8 @@ export default function App() {
     });
   };
 
-  const calculateAnnualTotal = () => {
-    let annualTotal = 0;
-    for (const month in monthlyBalance) {
-      const monthData = currentMonthlyTotal[month as Months];
-      annualTotal += monthData.totalIn - monthData.totalOut;
-    }
-    setTotalAnnualValue(annualTotal);
-  };
-
   const updateCurrentMonth = (event: SelectChangeEvent<Months>) => {
     setCurrentMonth(event.target.value as Months);
-  };
-
-  const calculateMonthlyTotal = () => {
-    // Initialise totalIn and totalOut of the current month
-    let totalIn = 0;
-    let totalOut = 0;
-
-    monthlyBalance[currentMonth].categories.forEach((category) => {
-      category.sections.forEach((section) => {
-        if (category.type === "income") {
-          totalIn += section.value;
-        } else {
-          totalOut += section.value;
-        }
-      });
-    });
-
-    setCurrentMonthlyTotal((prev) => {
-      return {
-        ...prev,
-        [currentMonth]: { totalIn, totalOut },
-      };
-    });
   };
 
   // Spread selected categories to all months
@@ -1059,7 +1048,7 @@ export default function App() {
             <Header text="💰 Income & Assets" />
           </div>
           <CategoryContainer categoryType="income">
-            {cachedMonthlyBalance[currentMonth].categories.map((category, index) => {
+            {monthlyBalance[currentMonth].categories.map((category, index) => {
               if (category.type === "income") {
                 return (
                   <Category
@@ -1120,8 +1109,8 @@ export default function App() {
                         type: "CHANGE_CATEGORY_ITEM_VALUE",
                         params: {
                           index,
-                          newCategoryItemValue,
                           currentMonth,
+                          newCategoryItemValue,
                           categoryItemIndex,
                         },
                       });
@@ -1141,10 +1130,7 @@ export default function App() {
               }
             })}
           </CategoryContainer>
-          <TotalValueCard
-            text="Total In: "
-            value={currentMonthlyTotal[currentMonth].totalIn}
-          />
+          <TotalValueCard text="Total In: " value={currentMonthTotals.totalIn} />
         </Column>
         {/* Second Column */}
         <Column>
@@ -1166,7 +1152,7 @@ export default function App() {
             <Header text="💸 Xpenses & Liabilities" />
           </div>
           <CategoryContainer categoryType="expense">
-            {cachedMonthlyBalance[currentMonth].categories.map((category, index) => {
+            {monthlyBalance[currentMonth].categories.map((category, index) => {
               if (category.type === "expense") {
                 return (
                   <Category
@@ -1233,10 +1219,7 @@ export default function App() {
               }
             })}
           </CategoryContainer>
-          <TotalValueCard
-            text="Total Out: "
-            value={currentMonthlyTotal[currentMonth].totalOut}
-          />
+          <TotalValueCard text="Total Out: " value={currentMonthTotals.totalOut} />
         </Column>
       </div>
       {/* Final Result Container */}
@@ -1244,16 +1227,13 @@ export default function App() {
         <div className="flex items-center justify-center">
           <h1 className="md:text-2xl text-gray-400 font-bold">Monthly Net: </h1>
           <h3 className="md:text-2xl text-gray-400 font-bold">
-            {(
-              currentMonthlyTotal[currentMonth].totalIn -
-              currentMonthlyTotal[currentMonth].totalOut
-            ).toFixed(2)}
+            {(currentMonthTotals.totalIn - currentMonthTotals.totalOut).toFixed(2)}
           </h3>
         </div>
         <div className="flex items-center justify-center">
           <h1 className="md:text-2xl text-gray-400 font-bold">Annual Net: </h1>
           <h3 className="md:text-2xl text-gray-400 font-bold">
-            {totalAnnualValue.toFixed(2)}
+            {annualNet.toFixed(2)}
           </h3>
         </div>
       </Card>
