@@ -5,7 +5,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import { useAuth0 } from "@auth0/auth0-react";
 import { MdLogout } from "react-icons/md";
 import { MdContentPaste } from "react-icons/md";
-import { useStoredValue } from "./customHooks";
+import useServerState, { useStoredValue } from "./customHooks";
 import toastFactory, { MessageSeverity } from "./ToastMessages";
 import { ToastContainer } from "react-toastify";
 
@@ -808,19 +808,26 @@ const defaultMonthlyBalance: Finances = {
 };
 
 export default function App() {
+  const { logout, user, isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
+
   // =======================//
   //                        //
   //   STATE VARIABLES      //
   //                        //
   // =======================//
 
+  const [userEmail, setUserEmail] = useStoredValue<string>(
+    user?.email || "default_user@gmail.com",
+    "userEmail"
+  );
   const [currentMonth, setCurrentMonth] = useStoredValue<Months>(
     "January",
     "currentMonth"
   );
-  const [cachedMonthlyBalance, setCachedMonthlyBalance] = useStoredValue<Finances>(
-    defaultMonthlyBalance,
-    "monthlyBalance"
+  const [cachedMonthlyBalance, setCachedMonthlyBalance] = useServerState<Finances>(
+    "monthlyBalance",
+    userEmail,
+    defaultMonthlyBalance
   );
   const [monthlyBalance, send] = React.useReducer(
     monthlyBalanceReducer,
@@ -831,7 +838,6 @@ export default function App() {
     [],
     "selectedCategories"
   );
-  const { logout, user, isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
 
   // Derived totals for instant UI updates
   const currentMonthTotals = React.useMemo(() => {
@@ -870,6 +876,13 @@ export default function App() {
   //   SIDE EFFECTS         //
   //                        //
   // =======================//
+
+  // Update the user email in cache whenever is not null
+  React.useEffect(() => {
+    if (user?.email) {
+      setUserEmail(user.email);
+    }
+  }, [user]);
 
   // Redirect to login if not authenticated
   React.useEffect(() => {
